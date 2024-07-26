@@ -1,0 +1,54 @@
+body{
+    margin: 10px; /*Sayfanın varsayılan dış kenar boşluklarını ayarlar.*/
+    font-family: 'Arial', sans-serif; /* Sayfadaki tüm metinlerin varsayılan metin yazı tipi belirler.*/
+    line-height: 1.6; /*Satır yüksekliğini metin boyutunun 1.6 katı olarak ayarlar. Okunabilirliği artırır.*/
+    background-color: #f4f4f4; /* Açık gri arka plan */
+    color: #333; /* Koyu gri metin rengi */
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.input-alan {
+    display: flex;
+    align-items: center; /* Giriş kutusu ve butonu dikeyde ortala */
+}
+
+h1{
+    text-align: center; /* Başlığı yatayda ortalar. */
+    margin-bottom: 20px; /* Başlığın altına 20 piksellik bir boşluk ekler. */
+}
+
+#tahminInput {
+    flex-grow: 1; /* Giriş kutusuna daha fazla alan ver */
+    width: 250px; /* Giriş kutusunun genişliğini 250 piksel yapar. */
+    padding: 10px;  /* Giriş kutusunun içine 10 piksellik boşluk ekler. */
+    margin-bottom: 10px; /* Giriş kutusunun altına 10 piksellik bir boşluk ekler. */
+    border: 1px solid #ccc; /* Giriş kutusunun etrafına 1 piksel kalınlığında, düz ve açık gri (#ccc) bir kenarlık ekler. */
+    border-radius: 3px; /* Giriş kutusunun köşelerini 3 piksellik bir yarıçapla yuvarlar. */
+}
+
+button{
+    background-color: #4CAF50; /* Butonun arka plan rengini yeşil yapar. */ 
+    color: white; /* Butonun yazı rengini beyaz yapar. */
+    padding: 10px 20px; /* Butonun içine 10 piksel dikey, 20 piksel yatay boşluk ekler. */
+    border: none; /* Butonun varsayılan kenarlığını kaldırır. */
+    border-radius: 3px; /* Butonun köşelerini hafifçe yuvarlar. */
+    cursor: pointer; /* Fare imleci butonun üzerine geldiğinde el simgesine dönüşür. */
+    transition: background-color 0.3s ease; /* Hover efekti için geçiş */
+}
+
+button:hover {
+    background-color: #45a049; /* Hoverda renk değişimi */
+}
+
+#sonuc {
+    margin-top: 20px; /* Sonuç metninin üstüne 20 piksellik bir boşluk ekler. */
+    font-weight: bold; /* Sonuç metnini kalın yapar. */
+    color: #007bff; /* Mavi renk */
+}
